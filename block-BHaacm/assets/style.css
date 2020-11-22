@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root{
+    --primary:rgb(33,57,106);
+    --secondary:rgb(105,184,103);
+    --tertinary:rgb(152,152,155);
+    --bg-color:rgb(233,236,252);
+}
+html{
+    font-size: 14px;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.full-width{
+    width: 100%;
+}
+.font-0{
+    font-size: 0;
+}
+.padding{
+    padding: 5rem 0;
+}
+.btn{
+    text-decoration: none;
+    color: var(--tertinary);
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 1.25rem;
+    display: inline-block;
+    background-color: var(--secondary);
+    padding: 0.9rem 1.5rem;
+    color: white;
+    border-radius: 0.25rem;
+
+}
+.text{
+    font-size: 1rem;
+    color: var(--tertinary);
+}
+/* header */
+.navbar{
+    padding: 1rem 0;
+    background-color: var(--primary);
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.nav a{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+.nav ul li{
+    margin-left: 2rem;
+    font-weight: 600;
+}
+.nav .active{
+    color: var(--secondary);
+}
+/* main */
+.hero{
+    background-color: var(--bg-color);
+}
+.hero h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+img{
+    object-fit: cover;
+    height: 100%;
+}
+.btn-primary{
+    padding: 0.8rem 1.6rem;
+}
+.blog h1{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3.125rem;
+}
+.blog h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+
+/* footer */
+.footer{
+    padding: 1.2rem;
+    background-color: var(--primary);
+    color: var(--tertinary);
+    font-size: 1.2rem;
+}
+.footer i{
+    margin-left: 0.8rem;
+    font-size: 1.5rem;
+    color: var(--tertinary);
+}
+
+
+@media screen  and (max-width:768px){
+    html{
+        font-size: 10px;
+    }
+    .navbar{
+        padding: 3rem;
+    }
+    .nav{
+        margin-top: 1rem;
+    }
+    .nav ul li{
+        margin-left: 3rem;
+    }
+    .nav ul li a{
+        font-size: 1.8rem;
+    }
+    .flex-30,.flex-48{
+        flex: 0 1 100%;
+        margin: 2.4rem 0;
+    }
+    .padding{
+        padding: 4rem 0;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .text{
+        font-size: 1.6rem;
+    }
+    .hero h1{
+        font-size: 4rem;
+    }
+    .blog h1{
+        font-size: 4rem;
+    }
+    .blog h2{
+        font-size: 2.5rem;
+        margin: 1.5rem 0;
+    }
+    .btn{
+        padding: 1.5rem 2.5rem;
+        font-size: 1.6rem;
+    }
+    .btn-primary{
+        padding: 1.5rem 3.6rem;
+    }
+    .icon{
+        margin-top:1rem ;
+    }
+    .footer{
+        padding: 3rem;
+    }
+    .footer .text{
+        font-size: 2.5rem;
+        color: rgb(188,192,210);
+    }
+    .footer i{
+        font-size: 2.5rem;
+        color: rgb(188,192,210);
+    }
+}
