@@ -133,9 +133,10 @@ html{
     font-weight: 500;
     margin-bottom: 1.25rem;
 }
-img{
+.blog img{
     object-fit: cover;
-    height: 100%;
+    -o-object-fit: cover;
+    max-height: 230px;
 }
 .btn-primary{
     padding: 0.8rem 1.6rem;
@@ -171,6 +172,30 @@ img{
     html{
         font-size: 10px;
     }
+    .flex-100{
+        flex: 0 1 100%;
+        margin: 2.4rem 0;
+    }
+    .wrap{
+        flex-wrap: wrap;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .text{
+        font-size: 1.6rem;
+    }
+    .padding{
+        padding: 4rem 0;
+    }
+    .btn{
+        padding: 1.5rem 2.5rem;
+        font-size: 1.6rem;
+    }
+    .btn-primary{
+        padding: 1.5rem 3.6rem;
+    }
+    /* header */
     .navbar{
         padding: 3rem;
     }
@@ -183,18 +208,9 @@ img{
     .nav ul li a{
         font-size: 1.8rem;
     }
-    .flex-30,.flex-48{
-        flex: 0 1 100%;
-        margin: 2.4rem 0;
-    }
-    .padding{
-        padding: 4rem 0;
-    }
-    .column{
-        flex-direction: column;
-    }
-    .text{
-        font-size: 1.6rem;
+    /* hero */
+    .hero .wrap{
+        flex-wrap: wrap-reverse;
     }
     .hero h1{
         font-size: 4rem;
@@ -206,16 +222,7 @@ img{
         font-size: 2.5rem;
         margin: 1.5rem 0;
     }
-    .btn{
-        padding: 1.5rem 2.5rem;
-        font-size: 1.6rem;
-    }
-    .btn-primary{
-        padding: 1.5rem 3.6rem;
-    }
-    .icon{
-        margin-top:1rem ;
-    }
+    /* footer */
     .footer{
         padding: 3rem;
     }
@@ -226,5 +233,8 @@ img{
     .footer i{
         font-size: 2.5rem;
         color: rgb(188,192,210);
+    }
+    .icon{
+        margin-top:1rem ;
     }
 }
