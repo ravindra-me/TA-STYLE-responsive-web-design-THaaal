@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root{
+    --primary:rgb(227,82,77);
+    --secondary:rgb(223,236,255);
+    --ternary:rgb(120,121,123);
+    --bg-footer:rgb(35,52,123);
+    --quatery:rgb(16,33,105);
+}
+html{
+    font-size: 16px;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+.container{
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.flex{
+    display: flex;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.align-start{
+    align-items: flex-start;
+}
+.text-center{
+    text-align: center;
+}
+.padding{
+    padding: 4rem 0;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.flex-46{
+    flex: 0 1 46%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.flex-31{
+    flex:0 1 31%;
+}
+.flex-32{
+    flex: 0 1 32%;
+}
+.flex-25{
+    flex: 0 1 25%;
+}
+.flex-15{
+    flex: 0 1 15%;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.btn{
+    background-color: var(--primary);
+    display: inline-block;  
+    color: white;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn-news{
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    display: inline-block;
+}
+.active{
+    color: var(--primary);
+}
+.bg-active{
+    background-color: var(--primary);
+    color: white;
+}
+.full-width{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+.font-0{
+    font-size: 0;
+}
+.primary-heading{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.3;
+}
+.secondary-heading{
+    font-size: 2.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.third-heading{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+.text{
+    font-size: 1.2rem;
+    color:var(--ternary);
+    font-weight: 600;
+}
+/* header */
+.navbar{
+    padding:1rem;
+    position: absolute;
+    width: 100%;
+}
+.navbar .logo{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight:800;
+    color: white;
+}
+.navbar .nav .nav-item{
+    margin-left: 2.5rem;
+}
+.navbar .nav-item a{
+    text-decoration: none;
+    font-weight:600;
+    color: white;
+    font-size: 1.25rem;
+}
+.navbar .btn{
+    padding: 0.5rem 2rem;
+    text-transform: capitalize;
+    border-radius: 0.125rem;
+}
+/* hero section */
+.hero{
+    background:linear-gradient(to right,rgba(63,62,179,0.7) ,rgba(63,62,179,0.9) ) ,url(./banner.png) 0 100% no-repeat;
+    background-size: cover;
+    padding-top: 7rem;
+}
+.hero .primary-heading{
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    color: white;
+}
+.hero .text{
+    color: white;
+    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.hero .btn{
+    padding: 0.8rem 2rem;
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    border-radius: 0.23rem;
+}
+/* about section */
+.about .btn{
+    padding: 0.8rem 2rem;
+    margin-top: 0.5rem;
+    border-radius: 0.23rem;
+}
+.about .secondary-heading{
+    font-size: 3rem;
+}
+.about .text{
+    margin: 1rem 0;
+}
+/* why join section */
+.why-join{
+    background-color: var(--secondary);
+}
+.why-join .secondary-heading{
+    margin-bottom: 4rem;
+}
+.why-join .flex-30{
+    border: 0.178rem dashed var(--primary);
+    padding: 2rem 1rem ;
+}
+.why-join .absolute{
+    font-size: 2rem;
+    font-weight: 800;
+    width: 2rem;
+    height: 2rem;
+    background-color: #DFECFE;
+    position: absolute;
+    top: -1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 1.7rem;
+    text-align: center;
+}
+.why-join .text{
+    font-size: 1.1rem;
+}
+/* info section */
+.info{
+    background-color: var(--secondary);
+}
+.info .text{
+    color: black;
+    font-size: 1.2rem;
+}
+.info .flex-25{
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.info strong{
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.info .bg-active .text{
+    color: white;
+    font-weight: 800;
+}
+.flex-25:hover{
+    background-color: var(--primary);
+    color: white;
+}
+/* vidio section */
+.vidio img{
+    border-radius: 1.2rem;
+}
+.vidio .over-lay{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.vidio .play-circle{
+    background-color: white;
+    width: 6rem;
+    text-align: center;
+    height: 6rem;
+    border-radius: 50%;
+}
+.vidio .play-circle i{
+    font-size: 4rem;
+    color: var(--primary);
+}
+/* news latest  */
+.news{
+    background-color: var(--secondary);
+    padding-bottom: 8rem;
+}
+.news .secondary-heading{
+    margin-bottom: 2rem;
+}
+.news .news-heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.8rem 0;
+    line-height: 1.3;
+}
+.btn-news:hover{
+    color: var(--primary);
+}
+/* footer */
+.contact{
+    background-color: var(--bg-footer);
+    padding: 3rem 0;
+}
+.footer .footer-logo{
+    display: flex;
+}
+.footer .footer-heading{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(188,192,210);
+    font-size: 1.25rem;
+}
+.footer ul li{
+    margin-right:2rem ;
+}
+.footer .icon{
+    margin-right: 4rem;
+    font-size: 1.8rem;
+}
+.footer ul  a:hover{
+ color: var(--primary);
+}
+.copy-right{
+    background-color: var(--quatery);
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.25rem;
+    color: rgb(188,192,210);
+}
