@@ -301,7 +301,7 @@ body{
 .schedule .doted-border{
     color: var(--primary);
 }
-.schedule-date::after {
+.schedule-date::before {
     content: "";
     height: 4.2rem;
     border-right: 0.125rem dashed var(--primary);
@@ -309,7 +309,7 @@ body{
     left: 50%;
     top: 100%;
   }
-  .schedule .last-item .schedule-date::after{
+  .schedule .last-item .schedule-date::before{
     display: none;
   }
 
@@ -515,7 +515,7 @@ body{
         display: flex;
     }
     .hero img{
-        max-height: 500px;
+        max-height: 400px;
         object-fit: cover;
         border-top-left-radius: 3rem;
         border-bottom-right-radius: 3rem;
@@ -526,12 +526,39 @@ body{
     /* sechdule */
     .schedule .schedule-date{
         margin: 0 auto;
+        border: 0;
+        width: auto;
+        height: auto;
+        background: none;
+        color: var(--primary);
     }
     .schedule article{
         margin-bottom: 2rem;
     }
-    /* info */
+    .schedule .flex-60{
+        margin: 1rem 0;
+    }
+    .schedule .schedule-date::before{
+        display: none;
+    }
+    .schedule article img{
+        max-height: 200px;
+        object-fit: cover;
+    }
+    .schedule .btn{
+        margin-top: 1rem;
+    }
+    .schedule-item{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        padding: 0 2rem;
+        border-radius: 0.5rem;
+    }
+    /* news*/
+    .news img{
+        max-height: 200px;
+        object-fit: cover;
 
+    }
     /* footer */
     .footer .flex-30,.flex-40,.flex-15{
         margin: 2rem 0;
