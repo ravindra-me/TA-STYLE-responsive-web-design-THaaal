@@ -303,8 +303,8 @@ body{
 }
 .schedule-date::after {
     content: "";
-    height: 4rem;
-    border-right: 2px dashed var(--primary);
+    height: 4.2rem;
+    border-right: 0.125rem dashed var(--primary);
     position: absolute;
     left: 50%;
     top: 100%;
